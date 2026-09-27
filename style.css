@@ -1,0 +1,91 @@
+#page1, #signoff{
+    font-family: "Lobster", sans-serif;
+}
+
+#vinyl {
+    transform-origin: center;
+    animation: vinylSpin 3s linear infinite;
+    animation-play-state: paused;
+    width: 400px;
+    height: 400px;
+}
+
+#vinyl.playing {
+    animation-play-state: running;
+}
+
+@keyframes vinylSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#scrollDown {
+    cursor: pointer;
+    animation: arrowBounce 2s ease-in-out infinite;
+}
+
+@keyframes arrowBounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+}
+
+
+/* Desktop */
+@media (min-width: 769px) {
+    #records {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 30px;
+        padding-bottom: 35px;
+        gap: 25px;
+    }
+
+    #records > div {
+        width: 60%;
+    }
+
+    #vinyl {
+        width: 330px;
+        height: 330px;
+    }
+
+    #signoff {
+        margin-top: 0;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+    #vinyl {
+        width: 225px;
+        height: 225px;
+    }
+}
+
+@media (min-width: 769px) {
+    #records > div:first-of-type > div:first-of-type {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    #records > div:first-of-type > div:first-of-type > img {
+        justify-self: center;
+    }
+
+    #records > div:first-of-type > div:first-of-type > div {
+        width: 100%;
+    }
+}

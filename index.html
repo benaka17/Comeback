@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coming Back To Love</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+
+</head>
+
+<body class="">
+
+    <section class="flex flex-col justify-between items-center bg-pink-300 h-screen p-10 max-md:p-6" id="page1">
+
+        <h1 class="text-5xl max-md:text-4xl text-center">To my dear Sophia,</h1>
+
+        <div class="flex flex-col gap-y-2 text-center max-w-7xl">
+
+            <p class="text-3xl max-md:text-xl">Before I even say anything I want to apologize. I am sorry for how things went and what I said and did.</p>
+            <p class="text-3xl max-md:text-xl">These past two weeks have been a time of immense growth for me and I hope it's the same for you.</p>
+            <p class="text-3xl max-md:text-xl">I finally realized things that I should have a long time ago.</p>
+            <p class="text-3xl max-md:text-xl">Like that the space between us can be full of love instead of fear.</p>
+            <p class="text-3xl max-md:text-xl">Like that I can support and understand you in much better ways than I did.</p>
+            <p class="text-3xl max-md:text-xl">They say diamonds last forever, and so does my promise that came with your ring.</p>
+            <p class="text-3xl max-md:text-xl">I missed you.</p>
+            <p class="text-3xl max-md:text-xl">Let us meet again with love, and no pressure.</p>
+
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8" id="scrollDown">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+        </svg>
+
+    </section>
+
+    <section class="flex flex-col justify-between items-center bg-pink-300 h-screen p-5 max-md:p-6" id="records">
+
+        <h1 class="text-4xl max-md:text-3xl text-center">Records of Love</h1>
+
+        <div class="flex flex-col w-7/12 max-xl:w-9/12 max-md:w-full border rounded-lg border-black p-5 max-md:p-4 gap-y-4">
+
+            <audio id="audioPlayer"></audio>
+
+            <div class="flex flex-row justify-around items-center max-md:flex-col max-md:gap-y-6">
+
+                <img id="vinyl" src="vynilbgclear.png" alt="Vynil">
+
+                <div class="flex flex-col justify-center items-center text-center gap-y-2">
+
+                    <p class="text-2xl max-md:text-xl" id="songTitle">SONG TITLE</p>
+                    <p class="text-2xl max-md:text-xl" id="artistTitle">ARTIST TITLE</p>
+                    <p class="text-2xl max-md:text-xl" id="songTimestamp">0:00 – 0:00</p>
+
+                </div>
+
+            </div>
+
+            <div class="flex flex-row justify-center items-center">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12 max-md:size-10 cursor-pointer" id="previousButton">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061A1.125 1.125 0 0 1 21 8.689v8.122ZM11.25 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061a1.125 1.125 0 0 1 1.683.977v8.122Z" />
+                </svg>
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12 max-md:size-10 cursor-pointer" id="pauseButton">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25v13.5m-7.5-13.5v13.5" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12 max-md:size-10 cursor-pointer" id="playButton">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12 max-md:size-10 cursor-pointer" id="nextButton">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.689c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 1 0 1.954l-7.108 4.061A1.125 1.125 0 0 1 3 16.811V8.69ZM12.75 8.689c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 1 0 1.954l-7.108 4.061a1.125 1.125 0 0 1-1.683-.977V8.69Z" />
+                </svg>
+
+
+            </div>
+
+        </div>
+
+        <div class="flex flex-col gap-y-1 items-center text-center max-w-7xl" id="signoff">
+
+            <p class="text-2xl max-md:text-lg">I want it to be known that I adore you for exactly who you are. (I Wanna Be Adored - The Stone Roses)</p>
+            <p class="text-2xl max-md:text-lg">And that I want to start again. (When Can We Start Again - Casino Hearts)</p>
+            <p class="text-2xl max-md:text-lg">I own up to all my mistakes.</p>
+            <p class="text-2xl max-md:text-lg">I am truly sorry all of it.</p>
+            <div class="flex flex-row justify-center items-center gap-x-2">
+                <p class="text-2xl max-md:text-lg">How about we fall in love in October?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 max-md:size-6 cursor-pointer" id="playOutro">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                </svg>
+            </div>
+            <p class="text-2xl max-md:text-lg">With all my love, your Alexander</p>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>   
+
+</body>
+
+</html>
