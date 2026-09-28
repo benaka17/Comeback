@@ -7,6 +7,13 @@ const songs = [
         end: "0:50"
     },
     {
+        path: "songs/The Cure - Just Like Heaven.mp3",
+        title: "Just Like Heaven",
+        artist: "The Cure",
+        start: "0:48",
+        end: "1:16"
+    },
+    {
         path: "songs/Feel.mp3",
         title: "Feel",
         artist: "YUUL, Kyson",
